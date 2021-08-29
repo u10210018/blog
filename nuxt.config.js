@@ -47,10 +47,10 @@ export default {
 	i18n: {
 		locales: [
 			{
-				code: 'zh-TW',
-				iso: 'zh-TW',
+				code: 'zh-tw',
+				iso: 'zh-tw',
 				name: '繁中',
-				file: 'zh-TW.js'
+				file: 'zh-tw.js'
 			},
 			{
 				code: 'en',
@@ -60,9 +60,9 @@ export default {
 			}
 		],
 		langDir: resolve(__dirname, 'lang/'),
-		defaultLocale: 'zh-TW',
+		defaultLocale: 'zh-tw',
 		vueI18n: {
-			fallbackLocale: 'zh-TW',
+			fallbackLocale: 'zh-tw',
 			silentTranslationWarn: true,
 		}
 	},
