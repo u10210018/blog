@@ -43,16 +43,34 @@ export default {
 
 	//doc: https://i18n.nuxtjs.org/options-reference
 	i18n: {
-		locales: ['zh-tw', 'en'],
-		defaultLocale: 'zh-tw',
+		locales: [
+			{
+				code: 'zh-TW',
+				iso: 'zh-TW',
+				name: '繁中',
+				file: 'zh-TW.js'
+			},
+			{
+				code: 'en',
+				iso: 'en',
+				name: 'En',
+				file: 'en.js'
+			}
+		],
+		langDir: 'lang/',
+		defaultLocale: 'zh-TW',
 	},
 	//doc: https://tailwindcss.nuxtjs.org/options
 	tailwindcss: {
 		jit: true,
 		exposeConfig: true
 	},
+	router: {
+		base: '/blog/'
+	},
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build
 	build: {
-	}
+		publicPath: 'https://u10210018.github.io/blog'
+	},
 }
