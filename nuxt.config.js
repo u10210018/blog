@@ -1,3 +1,5 @@
+const { resolve } = require('path');
+
 export default {
 	// Target: https://go.nuxtjs.dev/config-target
 	target: 'static',
@@ -57,7 +59,7 @@ export default {
 				file: 'en.js'
 			}
 		],
-		langDir: 'lang/',
+		langDir: resolve(__dirname, 'lang/'),
 		defaultLocale: 'zh-TW',
 	},
 	//doc: https://tailwindcss.nuxtjs.org/options
