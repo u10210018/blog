@@ -23,6 +23,7 @@ export default {
 
 	// Global CSS: https://go.nuxtjs.dev/config-css
 	css: [
+		'@/assets/sass/tailwind.sass',
 	],
 
 	// Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -35,6 +36,7 @@ export default {
 	// Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
 	buildModules: [
 		'@nuxtjs/tailwindcss',
+		'@nuxtjs/style-resources',
 	],
 
 	// Modules: https://go.nuxtjs.dev/config-modules
@@ -69,10 +71,16 @@ export default {
 	//doc: https://tailwindcss.nuxtjs.org/options
 	tailwindcss: {
 		jit: true,
-		exposeConfig: true
+		exposeConfig: true,
+		cssPath: '~/assets/sass/tailwind.sass',
 	},
 	router: {
 		base: '/blog/'
+	},
+	styleResources: {
+		sass: [
+			'./assets/sass/_base.sass',
+		]
 	},
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build
