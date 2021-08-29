@@ -85,6 +85,7 @@ export default {
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build
 	build: {
-		publicPath: 'https://u10210018.github.io/blog'
+		publicPath: 'https://u10210018.github.io/blog',
+		extractCSS: true,
 	},
 }
