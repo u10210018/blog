@@ -61,6 +61,10 @@ export default {
 		],
 		langDir: resolve(__dirname, 'lang/'),
 		defaultLocale: 'zh-TW',
+		vueI18n: {
+			fallbackLocale: 'zh-TW',
+			silentTranslationWarn: true,
+		}
 	},
 	//doc: https://tailwindcss.nuxtjs.org/options
 	tailwindcss: {
