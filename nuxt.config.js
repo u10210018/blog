@@ -59,7 +59,7 @@ export default {
 				file: 'en.js'
 			}
 		],
-		langDir: resolve(__dirname, 'lang/'),
+		langDir: resolve(__dirname, 'lang'),
 		defaultLocale: 'zh-TW',
 		vueI18n: {
 			fallbackLocale: 'zh-TW',
